@@ -1,0 +1,24 @@
+{
+  "name": "halfhelix-technical-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "saber --port 8080",
+    "dev": "npm run start",
+    "build": "saber build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "team@halfhelix.com",
+  "dependencies": {
+    "saber": "^0.11.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.4",
+    "tailwindcss": "^1.4.6"
+  },
+  "browserslist": [
+    "ie > 10",
+    "last 2 versions"
+  ]
+}
