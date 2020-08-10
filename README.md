@@ -52,3 +52,5 @@ The aim of this challenge is to completed the page as communicated in the Figma 
 - All fonts have been added to the project.
 - The tailwind config has been prepared for you.
 - Use the closest available Tailwind class when styling components.
+
+start
