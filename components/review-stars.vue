@@ -1,5 +1,5 @@
 <template>
-  <div class="flex review-stars" :style="{width: `60px`, height: `9px`}">
+  <div class="flex flex-col review-stars" :style="{width: `60px`, height: `9px`}">
     <!-- fill in here -->
   </div>
 </template>

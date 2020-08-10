@@ -6,12 +6,12 @@
       class="font-body1 text-sm mt-6 mb-12 md:mb-16"
     >{{ $siteConfig.page.products.length }} products</h6>
     <div>
-      <div class="flex flex-wrap md:-mx-4">
+      <div class="flex flex-wrap md:-mx-4 mb-4">
         <product-card
           v-for="(product, i) in $siteConfig.page.products"
           :key="i"
           :product="product"
-          class="md:w-1/3 md:px-4 pb-12"
+          class="md:w-1/4 md:px-4 pb-12"
         />
       </div>
     </div>

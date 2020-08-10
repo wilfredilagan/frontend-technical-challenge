@@ -5,8 +5,11 @@
         <lazy-image :src="product.images.main" v-if="isHovering" />
         <lazy-image :src="product.images.secondary" v-else />
       </transition>
-      <div class="flex" @mouseover="isHovering = true">
-        <LazyImage />
+      <div class="flex flex-col">
+        <div class="flex">
+          <div class="w-1/2 text-left font-display">{{ product.title }}</div>
+          <div class="w-1/2 text-right font-display"> {{ product.price }}</div>
+        </div>
         <ReviewStars />
     </div>
   </div>
