@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="src" />
+    <img src="../static/placeholder-image.png" :data-src="src" class="lazy" />
   </div>
 </template>
 

@@ -2,8 +2,8 @@
   <div @mouseover="isHovering = true" @mouseleave="isHovering = false">
     <div class="text-left">
       <transition name="fade">
-        <lazy-image :src="product.images.main" v-if="isHovering" />
-        <lazy-image :src="product.images.secondary" v-else />
+        <lazy-image :src="product.images.main" v-if="isHovering"/>
+        <lazy-image :src="product.images.secondary" v-else/>
       </transition>
       <div class="flex flex-col">
         <div class="flex">
@@ -13,7 +13,7 @@
         <div class="flex">
           <div class="w-1/2 text-left font-body1 text-xs">{{ product.byline }}</div>
           <div class="w-1/2 text-right font-body1 text-xs">
-            <ReviewStars class="items-right" :stars="product.reviews.average"/>
+            <ReviewStars :stars="product.reviews.average"/>
             <div>{{ '(' + product.reviews.count + ' Reviews)' }}</div>
           </div>
     </div>
