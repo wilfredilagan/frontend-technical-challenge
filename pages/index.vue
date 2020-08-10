@@ -59,7 +59,7 @@ export default {
             }
           })
           active = false
-        }, 200)
+        }, 10)
       }
     }
   }

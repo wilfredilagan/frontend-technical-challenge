@@ -35,7 +35,7 @@ module.exports = {
       products: [
         Object.assign({}, product),
         Object.assign({}, product),
-        Object.assign({}, product),
+        Object.assign({ sale: true }, product),
         Object.assign({}, product),
         Object.assign({}, product),
         Object.assign({}, product),
