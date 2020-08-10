@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- fill in here -->
+    <img :src="src" />
   </div>
 </template>
 

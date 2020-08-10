@@ -1,12 +1,13 @@
 <template>
-  <div>
+  <div @mouseover="isHovering = true" @mouseleave="isHovering = false">
     <div class="text-left">
       <transition name="fade">
         <lazy-image :src="product.images.main" v-if="isHovering" />
         <lazy-image :src="product.images.secondary" v-else />
       </transition>
-      <div class="flex">
-        <!-- fill in here -->
+      <div class="flex" @mouseover="isHovering = true">
+        <LazyImage />
+        <ReviewStars />
     </div>
   </div>
 </template>
@@ -26,6 +27,6 @@ export default {
     return {
       isHovering: false
     }
-  }
+  },
 }
 </script>
