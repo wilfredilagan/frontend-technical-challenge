@@ -7,10 +7,15 @@
       </transition>
       <div class="flex flex-col">
         <div class="flex">
-          <div class="w-1/2 text-left font-display">{{ product.title }}</div>
-          <div class="w-1/2 text-right font-display"> {{ product.price }}</div>
+          <div class="w-1/2 text-left font-display text-xl">{{ product.title }}</div>
+          <div class="w-1/2 text-right font-display text-xl"> {{ product.price }}</div>
         </div>
-        <ReviewStars />
+        <div class="flex">
+          <div class="w-1/2 text-left font-body1 text-xs">{{ product.byline }}</div>
+          <div class="w-1/2 text-right font-body1 text-xs">
+            <ReviewStars class="items-right" :stars="product.reviews.average"/>
+            <div>{{ '(' + product.reviews.count + ' Reviews)' }}</div>
+          </div>
     </div>
   </div>
 </template>
